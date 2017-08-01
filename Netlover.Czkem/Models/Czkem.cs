@@ -86,9 +86,9 @@ namespace Netlover.Czkem.Models
 		public int MachineId { get; set; }
 		public int UserId { get; set; }
 		public string UserNo { get; set; }
-		public int VerifyMode { get; set; }//验证方式：0为密码验证，1为指纹验证，2为卡验证
-		public int InOutMode { get; set; }//考勤状态：0—Check-In   1—Check-Out  2—Break-Out  3—Break-In   4—OT-In   5—OT-Out
-		public int WorkCode { get; set; }//记录的Workcode值
+		public int VerifyMode { get; set; }//0:password，1:finger，2:card
+		public int InOutMode { get; set; }//0—Check-In   1—Check-Out  2—Break-Out  3—Break-In   4—OT-In   5—OT-Out
+		public int WorkCode { get; set; }
 		public DateTime Datetime { get; set; }
 	}
 }
